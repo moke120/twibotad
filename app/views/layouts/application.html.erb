@@ -14,7 +14,13 @@
       <div class="navbar-header">
         <%= link_to 'TwiBotAd', root_path, class: 'navbar-brand' %>
       </div>
-    </div>
+
+			<div class="collapse navbar-collapse" id="bs-exapmle-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+				</ul>
+			</div>
+		</div>
   </header>
 
   <div class="container">
