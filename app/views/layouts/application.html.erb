@@ -17,7 +17,11 @@
 
 			<div class="collapse navbar-collapse" id="bs-exapmle-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
+				<% if logged_in? %>
+					<li><%= link_to 'ログオフ', 'logout' %></li>
+				<% else %>
 					<li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+				<% end %>
 				</ul>
 			</div>
 		</div>
